@@ -1,0 +1,22 @@
+.Nav {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+
+  height: 30px;
+  width: 450px;
+
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.nav-button {
+  display: inline-block;
+  height:30px;
+  background-color: plum;
+  border-top-width: 2px;
+  border-top-color: black;
+  border-top-style: solid;
+  width: 100px;
+}
