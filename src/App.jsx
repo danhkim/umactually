@@ -16,6 +16,14 @@ class App extends Component {
     this.sliderWrapper.slickGoTo(number)
   }
 
+  swipeHandler(number) {
+    var prevCurrent = document.getElementsByClassName("current")[0];
+    prevCurrent.classList.remove("current");
+
+    var newCurrent = document.getElementsByClassName(number+"")[0];
+    newCurrent.classList.add("current");  
+  }
+
   render() {
 
     var settings = {
@@ -32,7 +40,10 @@ class App extends Component {
 
     return (
       <div className="App">
-        <Slider ref={sliderWrapper => (this.sliderWrapper = sliderWrapper)} {...settings}>
+        <Slider 
+          ref={sliderWrapper => (this.sliderWrapper = sliderWrapper)} 
+          {...settings}
+          afterChange={this.swipeHandler}>
           <Screen text="1"/>
           <Screen text="2"/>
           <Screen text="3"/>
