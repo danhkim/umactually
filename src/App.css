@@ -5,7 +5,7 @@
   height:100vh;
   overflow:hidden; 
   background-color: #BE00B0;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .prev-slide {

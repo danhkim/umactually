@@ -1,0 +1,22 @@
+.What{
+  position: relative;
+  height: 100vh;
+  background-color: #BE00B0;
+  color: white;
+}
+
+.what-title {
+  position: absolute;
+  left:10vw;
+  top:1vw;
+  font-size: 160px;
+  line-height: 150px;
+}
+
+.what-text {
+  position: absolute;
+  right:10vw;
+  bottom:100px;
+  font-size: 197px;
+}
+

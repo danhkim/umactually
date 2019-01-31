@@ -5,6 +5,8 @@ import Nav from './Nav.jsx';
 import Slider from "react-slick";
 import Screen from './Screen.jsx';
 import Actually from './screens/Actually';
+import What from './screens/What';
+
 
 class App extends Component {
 
@@ -54,7 +56,7 @@ class App extends Component {
           {...settings}
           beforeChange={this.swipeHandler}>
           <Actually />
-          <Screen text="2"/>
+          <What />
           <Screen text="3"/>
           <Screen text="4"/>
         </Slider>
