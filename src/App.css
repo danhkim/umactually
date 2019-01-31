@@ -3,7 +3,7 @@
 
 .App {
   text-align: center;
-  height:500px;
+  height:100vh;
   overflow:hidden; 
 
 }
@@ -21,7 +21,7 @@
 
 .prev-slide {
   position: absolute;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   top:0;
   z-index: 5000;
@@ -30,9 +30,9 @@
 
 .next-slide {
   position: absolute;
-  height: calc(50vh - 30px);
+  height: calc(30vh - 30px);
   width: 100vw;
-  top:50vh;
+  bottom:0;
   z-index: 5000;
   cursor: s-resize;
 }
