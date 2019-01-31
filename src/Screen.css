@@ -1,4 +1,11 @@
 .Screen{
   height: 100vh;
   background-color: beige;
+  text-align: center;
+}
+
+.vcenter{
+  vertical-align: middle;
+  margin: 0;
+  padding-top: 200px;
 }

@@ -5,7 +5,8 @@ export default class Screen extends Component {
   render() {
     return (
       <div className="Screen">
-      um actually
+        <h1 className="vcenter">{this.props.text}</h1>
+        
       </div>
     );
   }
