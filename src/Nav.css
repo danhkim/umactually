@@ -29,31 +29,47 @@
   font-size: 36px;
 }
 
-.nav-button.current {
-  background: rgba(0, 0, 0, .28);
-}
-
-.nav-button.current:hover{
-  background-color: transparent;
-}
-
-
 div.pics:hover ~ .nav-highlight {
   left:40vw;
   display:block;
+}
 
+.pics.current ~ .nav-selection {
+  left:40vw;
+  display:block;
 }
 
 div.gimme:hover ~ .nav-highlight {
   left:60vw;
   display:block;
+}
 
+.gimme.current ~ .nav-selection {
+  left:60vw;
+  display:block;
+}
+
+div.gimme:hover{
+  color:white;
+}
+div.gimme{
+  color:#5FEB57;
 }
 
 div.actually:hover ~ .nav-highlight {
   left:0vw;
   display:block;
+}
 
+
+.actually.current ~ .nav-selection {
+  left:0vw;
+  display:block;
+}
+
+.what.current ~ .nav-selection {
+  left:20vw;
+  display:block;
 }
 
 div.what:hover ~ .nav-highlight {
@@ -61,18 +77,30 @@ div.what:hover ~ .nav-highlight {
   display:block;
 }
 
-.nav-highlight {
+
+.nav-highlight, .nav-selection {
   pointer-events: none;
-  position: relative;
+  position: absolute;
   height:85px;
   width:20vw;
-  z-index: 0;
-  background-color: #5FEB57;
-  top:-85px;
+  /* top:-85px; */
+  bottom:1px;
   left:0;
   display:none;
   transition-property: transform;
   transition: .3s ease-in-out;
+}
+
+.nav-highlight {
+  z-index:2;
+  background-color: #5FEB57;
+}
+
+.nav-selection {
+  z-index:0;
+  background-color: black;
+  opacity:.28;
+  /* background: rgba(0, 0, 0, .28); */
 }
 
 span.nav-button-text {
@@ -93,10 +121,6 @@ span.nav-button-text {
 
   .nav-button-text{
     font-size: 12px;
-  }
-
-  .nav-highlight {
-    top: -80px;
   }
 
   .mobile-text {

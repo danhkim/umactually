@@ -37,6 +37,7 @@ export default class Nav extends Component {
           </span>
         </div>
         <div className="nav-highlight" />
+        <div className="nav-selection" />
       </div>
     );
   }
