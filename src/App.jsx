@@ -16,11 +16,19 @@ class App extends Component {
     this.sliderWrapper.slickGoTo(number)
   }
 
-  swipeHandler(number) {
+  prevHandler(){
+    this.sliderWrapper.slickPrev();
+  }
+
+  nextHandler(){
+    this.sliderWrapper.slickNext();
+  }
+
+  swipeHandler(number,next) {
     var prevCurrent = document.getElementsByClassName("current")[0];
     prevCurrent.classList.remove("current");
 
-    var newCurrent = document.getElementsByClassName(number+"")[0];
+    var newCurrent = document.getElementsByClassName((next)+"")[0];
     newCurrent.classList.add("current");  
   }
 
@@ -43,12 +51,14 @@ class App extends Component {
         <Slider 
           ref={sliderWrapper => (this.sliderWrapper = sliderWrapper)} 
           {...settings}
-          afterChange={this.swipeHandler}>
+          beforeChange={this.swipeHandler}>
           <Screen text="1"/>
           <Screen text="2"/>
           <Screen text="3"/>
           <Screen text="4"/>
         </Slider>
+        <div className="prev-slide" onClick={e => this.prevHandler()}/>
+        <div className="next-slide" onClick={e => this.nextHandler()}/>
         <Nav control={this.changeHandler} />
       </div>
     );

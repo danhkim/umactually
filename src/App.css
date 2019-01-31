@@ -18,3 +18,27 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.prev-slide {
+  position: absolute;
+  height: 50vh;
+  width: 100vw;
+  top:0;
+  z-index: 5000;
+  cursor: n-resize;
+}
+
+.next-slide {
+  position: absolute;
+  height: calc(50vh - 30px);
+  width: 100vw;
+  top:50vh;
+  z-index: 5000;
+  cursor: s-resize;
+}
+
+@media only screen and (max-width : 640px) {
+  .prev-slide, .next-slide{
+    display: none;
+  }
+}
