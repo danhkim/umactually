@@ -4,14 +4,28 @@
   background-color: #BE00B0;
   color: white;
 }
-
-.gimme-title {
-  position: absolute;
-  left:10vw;
-  top:1vw;
-  font-size: 160px;
-  line-height: 150px;
+@media only screen and (min-width : 641px) {
+  .gimme-title {
+    position: absolute;
+    left:10vw;
+    top:1vw;
+    font-size: 160px;
+    line-height: 150px;
+  }
 }
+
+@media only screen and (max-width : 640px) {
+  .gimme-title {
+    position: absolute;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top:5vw;
+    font-size: 80px;
+    line-height: 75px;
+  }
+}
+
 
 .gimme-download {
   font-family: 'Roboto', sans-serif;
@@ -46,4 +60,5 @@
   100% { background-color: #F3F315; }
 
 }
+
 

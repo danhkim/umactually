@@ -1,3 +1,8 @@
+:root {
+  --non-mobile-height: 85px;
+  --mobile-height: 80px;
+}
+
 .Nav {
   position: absolute;
   text-align: center;
@@ -5,7 +10,7 @@
   background-color: transparent;
   z-index:1;
 
-  height: 85px;
+  height: var(--non-mobile-height);
   width: 80vw;
 
   left: 0;
@@ -17,8 +22,8 @@
 .nav-button {
   position: relative;
   display: inline-block;
-  height:85px;
-  line-height: 85px;
+  height:var(--non-mobile-height);
+  line-height: var(--non-mobile-height);
   z-index: 88888;
   background-color: transparent;
   border-top-width: 1px;
@@ -29,18 +34,8 @@
   font-size: 36px;
 }
 
-div.pics:hover ~ .nav-highlight {
-  left:40vw;
-  display:block;
-}
-
 .pics.current ~ .nav-selection {
   left:40vw;
-  display:block;
-}
-
-div.gimme:hover ~ .nav-highlight {
-  left:60vw;
   display:block;
 }
 
@@ -49,18 +44,12 @@ div.gimme:hover ~ .nav-highlight {
   display:block;
 }
 
-div.gimme:hover{
+div.gimme:hover, .gimme.current{
   color:white;
 }
 div.gimme{
   color:#5FEB57;
 }
-
-div.actually:hover ~ .nav-highlight {
-  left:0vw;
-  display:block;
-}
-
 
 .actually.current ~ .nav-selection {
   left:0vw;
@@ -72,16 +61,33 @@ div.actually:hover ~ .nav-highlight {
   display:block;
 }
 
-div.what:hover ~ .nav-highlight {
-  left:20vw;
-  display:block;
+@media (hover: hover) {
+  div.what:hover ~ .nav-highlight {
+    left:20vw;
+    display:block;
+  }
+
+  div.actually:hover ~ .nav-highlight {
+    left:0vw;
+    display:block;
+  }
+
+  div.gimme:hover ~ .nav-highlight {
+    left:60vw;
+    display:block;
+  }
+
+  div.pics:hover ~ .nav-highlight {
+    left:40vw;
+    display:block;
+  }
 }
 
 
 .nav-highlight, .nav-selection {
   pointer-events: none;
   position: absolute;
-  height:85px;
+  height:var(--non-mobile-height);
   width:20vw;
   /* top:-85px; */
   bottom:1px;
@@ -112,11 +118,11 @@ span.nav-button-text {
 @media only screen and (max-width : 640px) {
 
   .nav-highlight, .nav-button, .Nav{
-    height:80px;
+    height:var(--mobile-height);
   }
 
   .nav-button{
-    line-height: 80px;
+    line-height: var(--mobile-height);
   }
 
   .nav-button-text{

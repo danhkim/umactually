@@ -5,18 +5,37 @@
   color: white;
 }
 
-.what-title {
-  position: absolute;
-  left:10vw;
-  top:1vw;
-  font-size: 160px;
-  line-height: 150px;
+@media only screen and (min-width : 641px) {
+  .what-title {
+    position: absolute;
+    left:10vw;
+    top:1vw;
+    font-size: 160px;
+    line-height: 150px;
+  }
+  
+  .what-text {
+    position: absolute;
+    right:10vw;
+    bottom:100px;
+    font-size: 197px;
+  }
 }
 
-.what-text {
-  position: absolute;
-  right:10vw;
-  bottom:100px;
-  font-size: 197px;
+@media only screen and (max-width : 640px) {
+  .what-title {
+    position: absolute;
+    left:1vw;
+    top:7vh;
+    font-size: 80px;
+    line-height: 75px;
+  }
+  
+  .what-text {
+    position: absolute;
+    right:10vw;
+    bottom:100px;
+    font-size: 80px;
+  }
 }
 
