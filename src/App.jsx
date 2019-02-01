@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import Screen from './Screen.jsx';
 import Actually from './screens/Actually';
 import What from './screens/What';
-
+import Pics from './screens/Pics';
 
 class App extends Component {
 
@@ -57,7 +57,7 @@ class App extends Component {
           beforeChange={this.swipeHandler}>
           <Actually />
           <What />
-          <Screen text="3"/>
+          <Pics />
           <Screen text="4"/>
         </Slider>
         <div className="prev-slide" onClick={e => this.prevHandler()}/>
