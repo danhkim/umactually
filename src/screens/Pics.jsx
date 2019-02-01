@@ -20,7 +20,7 @@ export default class Pics extends Component {
       sortBy: 'most-recent', // none, least-commented, least-liked, least-recent, most-commented, most-liked, most-recent, random
       userId: 8639908970,
     }
-    instafeed(options).then(e => {this.setState({data: e.data})});
+    instafeed(options).then(e => {this.setState({data: e.data.slice(0,6)})});
   }
 
   // renderPics(){
