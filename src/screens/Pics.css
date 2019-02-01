@@ -75,13 +75,11 @@
 
   .pics-bottom {
     position: absolute;
-    text-align: center;
-    bottom:270px;
-    left:-100px;
-    right:0;
-    margin: 0 auto;
+    bottom:50px;
+    left:-10px;
     font-size: 80px;
     transform: rotate(-60deg);
+    transform-origin: top left;
   }
 
   .pics-container {
