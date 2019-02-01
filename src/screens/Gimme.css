@@ -1,0 +1,48 @@
+.Gimme{
+  position: relative;
+  height: 100vh;
+  background-color: #BE00B0;
+  color: white;
+}
+
+.gimme-title {
+  position: absolute;
+  left:10vw;
+  top:1vw;
+  font-size: 160px;
+  line-height: 150px;
+}
+
+.gimme-download {
+  font-family: 'Roboto', sans-serif;
+  display: block;
+  position: absolute;
+  bottom: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 24px;
+  background: #5FEB57;
+  vertical-align: middle;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  color: white;
+  margin: 0 auto;
+}
+
+.gimme-download:hover {
+  animation: color_change .5s infinite ;
+}
+@keyframes color_change {
+	20% { background-color: #5FEB57; }
+  40% { background-color: #0900FF; }
+  60% { background-color: #c20ed5; }
+  80% { background-color: #ff0000; }
+  100% { background-color: #F3F315; }
+
+}
+
