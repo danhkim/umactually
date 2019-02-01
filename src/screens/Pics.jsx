@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Pics.css';
 import instafeed from 'instafeed-lite'
+import Screen from './Screen';
 
 export default class Pics extends Component {
 
@@ -33,6 +34,7 @@ export default class Pics extends Component {
   render() {    
     return (
       <div className="Pics">
+        <Screen slider={this.props.slider}/>
         <div className="pics-container">
           {this.state.data.map((data) => {
             console.log(data.images.standard_resolution.url);

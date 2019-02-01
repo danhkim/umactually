@@ -8,27 +8,12 @@ import Actually from './screens/Actually';
 import What from './screens/What';
 import Pics from './screens/Pics';
 import Gimme from './screens/Gimme';
-import WheelReact from 'wheel-react';
+
 class App extends Component {
 
   constructor(props) {
     super(props);
     this.changeHandler = this.changeHandler.bind(this)
-    WheelReact.config({
-      up: () => {
-        console.log("UPPPP")
-        this.prevHandler();
-      },
-      down: () => {
-        console.log("UPPPP")
-
-        this.nextHandler();
-      }
-    });
-  }
-
-  componentWillUnmount(){
-    WheelReact.clearTimeout();
   }
 
   changeHandler(number) {
@@ -71,13 +56,11 @@ class App extends Component {
           ref={sliderWrapper => (this.sliderWrapper = sliderWrapper)} 
           {...settings}
           beforeChange={this.swipeHandler}>
-          <Actually />
-          <What />
-          <Pics />
-          <Gimme />
+          <Actually slider={e => this.sliderWrapper}/>
+          <What slider={e => this.sliderWrapper} />
+          <Pics slider={e => this.sliderWrapper}/>
+          <Gimme slider={e => this.sliderWrapper} />
         </Slider>
-        <div           {...WheelReact.events}
-className="wheel-detect" />
         <Nav control={this.changeHandler} />
       </div>
     );

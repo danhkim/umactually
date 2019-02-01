@@ -32,6 +32,7 @@
   border-radius: 3px;
   color: white;
   margin: 0 auto;
+  z-index:999999;
 }
 
 .gimme-download:hover {
