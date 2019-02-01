@@ -42,7 +42,8 @@
     flex-wrap: wrap;
     left:0;
     right:0;
-    margin: 15px auto 85px auto;
+    margin: 0 auto 85px auto;
+    padding-top:15px;
     width: 735px;
     height: 490px;
   }
@@ -91,7 +92,8 @@
     flex-wrap: wrap;
     left:0;
     right:0;
-    margin: 15px auto 85px auto;
+    margin: 0 auto 85px auto;
+    padding-top:15px;
     width: 340px;
     height: 510px;
   }
