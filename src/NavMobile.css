@@ -1,0 +1,76 @@
+:root {
+  --non-mobile-height: 85px;
+  --mobile-height: 80px;
+}
+
+@media only screen and (max-width : 640px) {
+
+  .nav-highlight, .nav-button, .Nav{
+    height:var(--mobile-height);
+  }
+
+  .nav-button{
+    line-height: var(--mobile-height);
+  }
+
+  .nav-highlight, .nav-button, .nav-selection {
+    width:23.75vw;
+  }
+
+  .Nav {
+    width: 95vw;
+  }
+
+  .nav-button-text{
+    font-size: 12px;
+  }
+
+  .mobile-text {
+    display: inline;
+  }
+  .mobile-text::after {
+    content:"\a";
+    white-space: pre;
+  }
+
+  .pics.current ~ .nav-selection {
+    left:47.5vw;
+    display:block;
+  }
+
+  .gimme.current ~ .nav-selection {
+    left:71.25vw;
+    display:block;
+  }
+
+  .actually.current ~ .nav-selection {
+    left:0vw;
+    display:block;
+  }
+
+  .what.current ~ .nav-selection {
+    left:23.75vw;
+    display:block;
+  }
+
+  div.what:hover ~ .nav-highlight {
+    left:23.75vw;
+    display:block;
+  }
+
+  div.actually:hover ~ .nav-highlight {
+    left:0vw;
+    display:block;
+  }
+
+  div.gimme:hover ~ .nav-highlight {
+    left:71.25vw;
+    display:block;
+  }
+
+  div.pics:hover ~ .nav-highlight {
+    left:47.5vw;
+    display:block;
+  }
+  
+}

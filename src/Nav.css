@@ -34,15 +34,6 @@
   font-size: 36px;
 }
 
-.pics.current ~ .nav-selection {
-  left:40vw;
-  display:block;
-}
-
-.gimme.current ~ .nav-selection {
-  left:60vw;
-  display:block;
-}
 
 div.gimme:hover, .gimme.current{
   color:white;
@@ -51,17 +42,28 @@ div.gimme{
   color:#5FEB57;
 }
 
-.actually.current ~ .nav-selection {
-  left:0vw;
-  display:block;
-}
+@media only screen and (min-width : 641px) {
 
-.what.current ~ .nav-selection {
-  left:20vw;
-  display:block;
-}
+  .pics.current ~ .nav-selection {
+    left:40vw;
+    display:block;
+  }
 
-@media (hover: hover) {
+  .gimme.current ~ .nav-selection {
+    left:60vw;
+    display:block;
+  }
+
+  .actually.current ~ .nav-selection {
+    left:0vw;
+    display:block;
+  }
+
+  .what.current ~ .nav-selection {
+    left:20vw;
+    display:block;
+  }
+
   div.what:hover ~ .nav-highlight {
     left:20vw;
     display:block;
@@ -82,7 +84,6 @@ div.gimme{
     display:block;
   }
 }
-
 
 .nav-highlight, .nav-selection {
   pointer-events: none;
@@ -115,26 +116,3 @@ span.nav-button-text {
   line-height: normal;
 }
 
-@media only screen and (max-width : 640px) {
-
-  .nav-highlight, .nav-button, .Nav{
-    height:var(--mobile-height);
-  }
-
-  .nav-button{
-    line-height: var(--mobile-height);
-  }
-
-  .nav-button-text{
-    font-size: 12px;
-  }
-
-  .mobile-text {
-    display: inline;
-  }
-  .mobile-text::after {
-    content:"\a";
-    white-space: pre;
-  }
-  
-}
