@@ -5,7 +5,8 @@
   color: white;
   background-image: url('../umactually-draft.jpg');
   background-position:50% 50%;
-  background-size:100vw
+  background-size:auto 100vh;
+  background-repeat: no-repeat;
 }
 
 @media only screen and (min-width : 641px) {
