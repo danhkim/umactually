@@ -1,8 +1,27 @@
+:root {
+  --non-mobile-nav-height: 85px;
+  --mobile-nav-height: 80px;
+}
+
 .Pics{
   position: relative;
   height: 100vh;
   background-color: #BE00B0;
   color: white;
+}
+
+.pics-bottom {
+  z-index: 99999;
+}
+
+.pics-bottom > a {
+  text-decoration: none;
+  color: white;
+}
+
+.pics-bottom > a:hover {
+  text-decoration: underline;
+  color: #5FEB57;
 }
 
 @media only screen and (min-width : 641px) {
@@ -42,8 +61,9 @@
     flex-wrap: wrap;
     left:0;
     right:0;
-    margin: 0 auto 85px auto;
-    padding-top:15px;
+    margin: 0 auto 0 auto;
+    padding-top:calc((100vh - 85px - 490px)/2);
+    padding-bottom: calc((100vh - 85px - 490px)/2);
     width: 735px;
     height: 490px;
   }
@@ -92,8 +112,9 @@
     flex-wrap: wrap;
     left:0;
     right:0;
-    margin: 0 auto 85px auto;
-    padding-top:15px;
+    margin: 0 auto 0 auto;
+    padding-top:calc((100vh - 80px - 510px)/2);
+    padding-bottom:calc((100vh - 80px - 510px)/2);
     width: 340px;
     height: 510px;
   }
