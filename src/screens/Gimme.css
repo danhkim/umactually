@@ -2,7 +2,10 @@
   position: relative;
   height: 100vh;
   background-color: #BE00B0;
-  color: white;
+  color: white;  
+  background-image: url('../umactually-draft.jpg');
+  background-position:50% 50%;
+  background-size:100vw
 }
 @media only screen and (min-width : 641px) {
   .gimme-title {
