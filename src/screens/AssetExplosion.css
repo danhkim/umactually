@@ -8,12 +8,12 @@
   height: 200px;
   width: 200px;
   /* background: red; */
-  background-image: url('../umactually-draft.jpg');
+  background-image: url('../um-actually-1s.png');
   background-position:50% 50%;
   background-size:200px 200px;
   background-repeat: no-repeat;
   transition: all ease-in-out .8s;
-
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .circle {
@@ -21,11 +21,12 @@
   height: 200px;
   width: 200px;
   background: blue;
-  background-image: url('../umactually-draft.jpg');
+  background-image: url('../um-actually-1s.png');
   background-position:50% 50%;
   background-size:200px 200px;
   background-repeat: no-repeat;
   transition: all ease-in-out .8s;
+  box-shadow: 1px 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .anim-1, .anim-3, .anim-5, .anim-7 {
