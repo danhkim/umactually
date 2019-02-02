@@ -1,0 +1,71 @@
+.AssetExplosion{
+  position: relative;
+  height: 100vh;
+  z-index: 15;
+}
+
+.square {
+  height: 200px;
+  width: 200px;
+  /* background: red; */
+  background-image: url('../umactually-draft.jpg');
+  background-position:50% 50%;
+  background-size:200px 200px;
+  background-repeat: no-repeat;
+  transition: all ease-in-out .8s;
+
+}
+
+.circle {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  background: blue;
+  background-image: url('../umactually-draft.jpg');
+  background-position:50% 50%;
+  background-size:200px 200px;
+  background-repeat: no-repeat;
+  transition: all ease-in-out .8s;
+}
+
+.anim-1, .anim-3, .anim-5, .anim-7 {
+  position: absolute;
+  left: -100px;
+}
+
+.anim-2, .anim-4, .anim-6, .anim-8 {
+  position: absolute;
+  right: -100px;
+}
+
+.slick-active .anim-1 {
+  transform: rotate(20deg) translate(calc(100px + 20vw), -5vh);
+}
+
+.slick-active .anim-3 {
+  transform: translate(calc(100px + 30vw), 40vh) rotate(90deg) ;
+}
+ 
+.slick-active .anim-5 {
+  transform: translate(calc(100px + 40vw), 60vh) rotate(160deg) ;
+}
+ 
+.slick-active .anim-7 {
+  transform: translate(calc(100px + 10vw), calc(80vh - 85px)) rotate(20deg);
+}
+
+.slick-active .anim-2 {
+  transform: translate(calc(-100px - 20vw), 120px) rotate(200deg) ;
+} 
+
+.slick-active .anim-4 {
+  transform: translate(calc(-100px - 20vw), calc(80vh - 85px)) rotate(30deg) ;
+} 
+
+.slick-active .anim-6 {
+  transform: translate(calc(-100px - 40vw), 200px) rotate(77deg) ;
+} 
+
+.slick-active .anim-8 {
+  transform: translate(calc(-100px - 10vw), 250px) rotate(77deg) ;
+} 

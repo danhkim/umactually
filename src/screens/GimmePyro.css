@@ -1,5 +1,7 @@
 .gimme-download:hover ~ .pyro > .before, .gimme-download:hover ~ .pyro > .after {
   position: absolute;
+  z-index: 17;
+  top: 20vh;
   width: 5px;
   height: 5px;
   border-radius: 50%;
