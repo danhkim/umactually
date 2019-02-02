@@ -43,7 +43,7 @@ export default class Pics extends Component {
         </div>
         <span className="pics-left-top">@</span>
         <span className="pics-right-top">@ us<br/>@</span>
-        <span className="pics-bottom"><a href="https://www.instagram.com/um_actually/" target="_blank">@um_actually</a></span>
+        <span className="pics-bottom"><a href="https://instagram.com/um_actually/" target="_blank">@um_actually</a></span>
       </div>
     );
   }
